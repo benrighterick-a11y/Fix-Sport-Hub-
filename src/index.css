@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-stadium-black: #080c0a;
+  --color-stadium-card: #111814;
+  --color-stadium-border: #1d2b23;
+  --color-stadium-green: #05d054;
+  --color-stadium-neon: #3cd070;
+  --color-stadium-gold: #f8be15;
+}
+
+/* Custom scrollbars for a clean gaming interface */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080c0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d2b23;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #05d054;
+}
+
+body {
+  background-color: var(--color-stadium-black);
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+}
+
+/* Stadium light radial glow background effect */
+.stadium-glow {
+  background: radial-gradient(circle at 50% -20%, rgba(5, 208, 84, 0.15) 0%, transparent 60%);
+}
+
+.card-hover-effect {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-2px);
+  border-color: rgba(5, 208, 84, 0.3);
+  box-shadow: 0 4px 20px -2px rgba(5, 208, 84, 0.08);
+}

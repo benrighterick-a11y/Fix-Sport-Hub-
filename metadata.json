@@ -1,0 +1,6 @@
+{
+  "name": "Fix Sport Hub",
+  "description": "A modern football and sports prediction platform designed for fans who want match insights, betting guidance, and daily sports updates in one place.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
